@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add article </title>
+    <link rel="stylesheet" type="text/css" href="login.css"> 
+    <script src='https://kit.fontawesome.com/a076d05399.js' ></script>
+    <style>
+.genre div{
+    display: flex;
+    padding: 5px 0px;
+    margin-left: 40%;
+    
+}
+.genre label{
+    margin: 0;
+    font-size: large;
+}
+.genre{
+    margin: 10px 0px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding: 10px 0px;
+}
+.date{
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+input[type="date"] {
+  display: block;
+  margin: 0 auto;
+}
+input[type="text"]{
+  width: 90%;
+  margin: 3px 5% !important;
+}
+input[type="submit"],input[type="reset"]{
+  display: flex;
+  width: 50%;
+  margin: 5px auto !important;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+#reset {
+    background-color: #dd4b39;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .main-container {
+    display: flex;
+    margin: 10vh auto;
+    width: 80%;
+    height: auto;
+    border: 2px whitesmoke solid;
+    border-radius: 25px;
+    background-color: rgb(146, 145, 145);
+    color: white;
+  }
+  
+  #login-container{
+    margin:5px auto;
+    width:60%;
+    border: 3px black solid;
+    border-radius: 25px;
+  }
+  #login-container label{
+    text-align: center;
+    font-size: larger;
+  }
+  .back-btn{
+    display: inline-flex;
+    background-color:lightcyan;
+    font-size: larger;
+    margin: 5px auto 5px 5px;
+    border-radius:15px;
+    }
+    header{
+      display: flex;
+      background-color: black;
+      margin: 10px 0px 0px;
+    }
+    body {
+    background-color: black;
+}
+label{
+  font-size: 1.5em !important;
+}
+
+    </style>
+
+
+</head>
+<body>
+  <div class="main-container">
+    <div id="login-container">
+      <header>
+      <button class="back-btn" onclick="document.location='mainadminpage.php'" ><i class='fas fa-arrow-circle-left'></i>&nbsp;Back</button>
+    </header>
+            <form action="texttoaudio4.php" method="post">
+                <h1 style="text-align: center; padding:5px; color:black; background-color: rgb(119, 115, 129);">Add Articles</h1>
+                <label for="user_input" style="color:black; text-decoration: underline;">Title of Article:</label>
+                <input type="text" name="user_input" autocomplete="off">
+               
+                <label for="message" style="color:black; text-decoration: underline;">Content of article:</label>
+                <input type="text" name="message" class="big" autocomplete="off">
+               
+            
+            <div class="genre">
+                <label for="Genre" style="color:black; text-decoration: underline;">Genre of Article:</label> 
+            <div><input type="radio" id="genre" name="genre" value="Politics"> <label for="Politics">Politics</label></div>
+           
+            <div><input type="radio" id="genre" name="genre" value="Sports"><label for="Sports">Sports</label></div>
+            
+            <div><input type="radio" id="genre" name="genre" value="Education"><label for="Education">Education</label></div>
+            
+            <div><input type="radio" id="genre" name="genre" value="Celebrities"><label for="Celebrities">Celebrities</label></div>
+            
+            <div><input type="radio" id="genre" name="genre" value="Economics"><label for="Economics">Economics</label></div>
+            
+            <div><input type="radio" id="genre" name="genre" value="Religious"><label for="Religious">Religious</label></div>
+            
+            </div>
+
+            
+            <div class="date">
+            <label for="date" style="color:black; text-decoration: underline;">Date:</label>
+            <input type="date" id="date" name="date" >
+            </div>
+                
+                <input type="submit" value="Add Article">
+                <input type="reset" id="reset">
+            </form>
+    </div>
+  </div>
+    
+</body>
+</html>

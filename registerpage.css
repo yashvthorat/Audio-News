@@ -1,0 +1,143 @@
+.register-container 
+  {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  border: black solid 2px;
+  padding: 10px;
+  border-radius: 20px;
+  }
+  @media only screen and (min-width: 992px){
+  .register-container 
+  {
+  display: block;
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  border: black solid 2px;
+  padding: 10px;
+  border-radius: 20px;
+  }
+  input[type="text"], input[type="email"], input[type="password"], input[type="tel"]{
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+}
+    
+
+label {
+  
+  margin-top: 1em;
+  text-align: center;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"]{
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  width: auto;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px;
+  margin: 8px ;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+input[type="reset"] {
+  width: auto;
+  background-color: #dd4b39;
+  color: white;
+  padding: 14px ;
+  margin: 8px ;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="reset"]:hover {
+  background-color: #dd4c39c2;
+}
+.submitField {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg {
+  background-color: rgb(173, 216, 230);
+}
+.logo {
+  display: flex;
+  margin-left: auto; margin-right: auto;
+  height: 200px;
+  width: 200px; 
+}
+.sign-in{
+  width: 30%;
+  background-color: #15a4cf;
+  color: white;
+  padding: 14px ;
+  margin-left: auto ; margin-right: auto;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.sign-in:hover{
+  background-color: #15a4cfd2;
+}
+.sign-inLable{
+text-decoration: underline;
+margin-bottom: 2px;
+color: #d14844;
+}
+.errorMsg{
+  display: flex;
+  text-align: left;
+  color: red;
+  margin-top: 0px;
+}
+    .must-fill{
+      display: flex;
+      color: red;
+    }
+    .stick{
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    #Validation,#errPass{
+      display: flex;
+      color: red;
+      justify-content: center;
+    }
+    .main-container {
+  display: flex;
+  margin: 10vh auto;
+  width: 80%;
+  height: auto;
+  border-radius: 25px;
+  background-color: white;
+}
+body{
+  background-color: lightgray;
+}
+@media only screen and (max-width: 600px) {
+  .main-container {
+    width: 100%;
+    margin:0%;
+  }
+}

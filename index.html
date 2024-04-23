@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect to login page</title>
+    <style>
+
+        .main{
+            width: 80%;
+            margin: 10%;
+            background-color: antiquewhite;
+
+        }
+        button{
+            padding: 15px;
+            background-color: lightcyan;
+
+        }
+        @media only screen and (max-width:600px){
+            body{
+                background-color: black;
+            }
+            button{
+                display: flex;
+                margin: 3px auto;
+
+            }
+         
+            .main h1{
+                display: flex;
+            }
+            .main{
+                width: 100%;
+                margin: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="for-login">
+        <h1>
+            Enter here to go on login Page
+        </h1>
+        <button id="login-btn" onclick="document.location='loginPage.php'">Login page</button>
+    </div>
+    <div class="for-register">
+        <h1>
+            Enter here to go on register Page
+        </h1>
+        <button id="register-btn" onclick="document.location='registerpage.php'">register page</button>
+    </div>
+
+</div>
+</body>
+</html>

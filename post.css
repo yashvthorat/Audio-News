@@ -1,0 +1,91 @@
+.main-container .heading{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    font: 3em;
+}
+.main-container{
+    border-radius: 25px;
+    background-color: lightgray;
+    margin: 3%;
+    
+    
+}
+.main-container .message{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 2% 10%;
+    background-color: lightblue;
+    font-size: 2em;
+    height: fit-content;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.main-container .audio-player{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: lightgrey;
+    padding: 5px;
+}
+.audio-text{
+    font-size: 2em;
+    color: darkcyan;
+    padding: 5px;
+    
+}
+.main{
+    background-color: gray; 
+    height: 100vh;
+    width: 100%; 
+}
+.next-btn{
+display: inline-flex;
+margin: 5px;
+font-size: large;
+background-color: lightgreen;
+}
+.homePage{
+display: inline-flex;
+background-color:lightcyan;
+font-size: large;
+margin: 5px 10px 5px 5px;
+}
+header{
+    display:flex;
+    margin-top: 10px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding:1em 0px;
+    justify-content: space-between;  
+}
+header button{
+    cursor: pointer;
+}
+.backButton {
+    display: inline-flex;
+    align-items:center;
+    background-color: lightgreen;
+    font-size: large;
+    margin: 5px;
+}
+header button{
+    padding:10px;
+    border-radius:25px;
+}
+header button:hover{
+    background-color: skyblue;
+    
+}
+header a{
+    text-decoration:none;
+}
+.date{
+    margin: 5px auto 5px 10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.5em;
+}
